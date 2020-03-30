@@ -1,0 +1,53 @@
+@import "reset.css";
+@import "./todo-list.css";
+html {
+    height      : 100%;
+    width       : 100%;
+    line-height : 1.4;
+}
+/* 에스터리스크 : 모든 것들 */
+* {
+    box-sizing : border-box;
+}
+body,
+#root {
+    min-height : 100%;
+    width      : 100%;
+    position   : absolute;
+    left       : 0;
+    top        : 0;
+}
+body {
+    font : 16px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+#root {
+    background-color : #F5F5F5;
+}
+._fcc {
+    display         : flex;
+    align-items     : center;
+    justify-content : center;
+}
+
+/*********************/
+/******* header ******/
+/*********************/
+header h1 {
+    color       : rgba(175, 47, 47, 0.15);
+    font-size   : 6.25rem;
+    margin      : 0.625rem 0;
+    font-weight : 100;
+}
+/*********************/
+/******* footer ******/
+/*********************/
+#footer-container {
+    margin      : 4rem auto 1.875rem;
+    color       : #BFBFBF;
+    font-size   : 0.625rem;
+    text-shadow : 0 0.0625rem 0 rgba(255, 255, 255, 0.5);
+    text-align  : center;
+}
+#footer-container p {
+    margin : 1em 0;
+}

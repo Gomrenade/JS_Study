@@ -1,0 +1,111 @@
+#todo-input {
+    height           : 4rem;
+    font-size        : 1.5rem;
+    background-color : #FFF;
+    box-shadow       : inset 0 -0.125rem 0.0625rem rgba(0, 0, 0, 0.03);
+    border           : none;
+    padding          : 1rem 1rem 1rem 3.75rem;
+    font-weight      : 300;
+}
+#todo-input:focus {
+    outline : none;
+}
+.todo-item {
+    height           : 3.75rem;
+    font-size        : 1.5rem;
+    word-break       : break-all;
+    padding          : 1rem 1rem 1rem 3.75rem;
+    border-bottom    : 0.0625rem solid #DDD;
+    position         : relative;
+    background-color : #FFF;
+}
+.contents-width {
+    min-width : 34.375rem;
+}
+.todos-wrap {
+    box-shadow : 0 0.125rem 0.25rem 0 rgba(0, 0, 0, 0.2), 0 1.5rem 3.125rem 0 rgba(0, 0, 0, 0.1);
+}
+.todo-item .toggle {
+    height   : 100%;
+    width    : 2.75rem;
+    opacity  : 0;
+    margin   : auto 0;
+    position : absolute;
+    top      : 0;
+    left     : 0;
+    z-index  : 1000;
+    cursor   : pointer;
+}
+.todo-item .toggle + label {
+    background-image    : url(./image/checkbox.svg);
+    background-repeat   : no-repeat;
+    background-position : center left;
+    transition          : color 0.4s;
+    padding             : 1rem 1rem 1rem 3.75rem;
+    position            : absolute;
+    left                : 0;
+    top                 : 0;
+    font-weight         : 300;
+}
+.todo-item .toggle:checked + label {
+    background-image : url(./image/checked.svg);
+    color            : #CCC;
+    text-decoration  : line-through;
+}
+.todo-item .destroy {
+    display          : none;
+    position         : absolute;
+    top              : 0;
+    right            : 0.625rem;
+    bottom           : 0;
+    width            : 2.5rem;
+    height           : 2.5rem;
+    margin           : auto 0;
+    margin-bottom    : 0.75rem;
+    font-size        : 2rem;
+    color            : #CC9A9A;
+    transition       : color 0.2s ease-out;
+    border           : none;
+    cursor           : pointer;
+    background-color : #FFF;
+}
+.todo-item:hover .destroy {
+    display : block;
+}
+.todo-item .destroy:hover {
+    color : #AF5B5E;
+}
+.todo-item .destroy:focus {
+    outline : none;
+}
+.todo-item .destroy:after {
+    content : '×';
+}
+
+.todo-item .edit {
+    display          : none;
+    position         : absolute;
+    top              : 0;
+    right            : 3.125rem;
+    bottom           : 0;
+    width            : 2.5rem;
+    height           : 2.5rem;
+    margin           : auto 0;
+    margin-bottom    : 0.75rem;
+    opacity          : 0.6;
+    font-size        : 2rem;
+    color            : #CC9A9A;
+    transition       : color 0.2s ease-out;
+    border           : none;
+    cursor           : pointer;
+    background-color : #FFF;
+}
+.todo-item:hover .edit {
+    display : block;
+}
+.todo-item .edit:hover {
+    opacity : 1;
+}
+.todo-item .edit:focus {
+    outline : none;
+}
