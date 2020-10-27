@@ -1,0 +1,33 @@
+@import "reset.css";
+
+._fcc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    color: rgba(175, 47, 47, 0.15);
+    font-size: 100px;
+    margin: 50px;
+}
+
+/*#input-main {*/
+/*    font-size: 24px;*/
+/*    padding: 16px 16px 16px 60px;*/
+/*    font-style: italic;*/
+/*    border: none;*/
+/*    box-shadow: inset 0 -2px 1px rgba(0,0,0,0.03)*/
+/*}*/
+
+.div_form {
+    font-size: 24px;
+    padding: 16px 16px 16px 60px;
+    font-style: italic;
+    border: none;
+    box-shadow: inset 0 -2px 1px rgba(0,0,0,0.03)
+}
+
+#test_div {
+    display: flex;
+}

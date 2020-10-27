@@ -30,11 +30,6 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
     line-height: 1;
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
 }
 ol, ul {
     list-style: none;
@@ -52,10 +47,43 @@ table {
     border-spacing: 0;
 }
 
-* {
-    box-sizing: border-box;
+.header-wrap {
+    display: flex;
+    justify-content: flex-end;
 }
 
-input {
+.header-item {
+    padding: 5px 10px;
+    font-size: 15px;
+}
+
+.main-wrap{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+#main-google {
+    padding: 50px;
+    font-size: 100px;
+}
+
+.search-warp {
+    display: flex;
+    justify-content: center;
+}
+
+.main-search {
+    background-color: transparent;
+    border: none;
+    margin: 0;
+    padding: 0;
+    color: rgba(0,0,0,.87);
+    word-wrap: break-word;
     outline: none;
+    display: flex;
+    flex: 100%;
+    -webkit-tap-highlight-color: transparent;
+    margin-top: -37px;
+    height: 34px;
+    font-size: 16px;
 }
