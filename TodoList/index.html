@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> 성환이의 Todo-List</title>
+    <link rel="stylesheet" href="css/global.css">
+</head>
+
+<body>
+    <header id="header-container" class="_fcc">
+        <h1>todos</h1>
+    </header>
+    <section id="section-container" class="_fcc">
+        <div id="div-sub-wrap">
+            <div id="div-main">
+                <input id="input-main" class="div_form"
+                       type="text"
+                       placeholder="What needs to be done?"
+                >
+            </div>
+            <div id="test_div">
+                <input type="checkbox">
+                <label>asdfasdf</label>
+                <input type="button" onclick=idSearch()>
+            </div>
+            <div>
+                <input type="checkbox">
+                <label>asdfasdf</label>
+                <button onclick="idSearch()">ddd</button>
+            </div>
+            </div>
+        </div>
+
+    </section>
+    <footer id="footer-container">
+    </footer>
+
+    <script>
+
+        function idSearch(e)
+        {
+            var ss = e.getAttribute('baseURI')
+            var ss = e.parentE
+            var sd = document.getElementById(e.getAttribute('parentElement')).getAttribute('id');
+        }
+
+        function createTodo (todo_text)
+        {
+            var old_todo = document.querySelector('#div-main');
+            var new_todo = document.createElement("div");
+            new_todo.className = "div_form";
+            new_todo.innerText = todo_text;
+            old_todo.appendChild(new_todo);
+        }
+
+
+        function removeTodo ()
+        {
+
+        }
+
+        var itest = document.querySelector("#input-main")
+        itest.addEventListener('keypress', function(e)
+        {
+            if(e.keyCode === 13)
+            {
+                createTodo(itest.value);
+                itest.value = null;
+            }
+        }
+        )
+    </script>
+
+</body>
+</html>
