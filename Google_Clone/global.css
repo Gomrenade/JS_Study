@@ -50,10 +50,11 @@ table {
 .header-wrap {
     display: flex;
     justify-content: flex-end;
+    margin:10px
 }
 
 .header-item {
-    padding: 5px 10px;
+    padding: 10px;
     font-size: 15px;
 }
 
@@ -62,28 +63,64 @@ table {
     justify-content: center;
     margin-top: 50px;
 }
-#main-google {
-    padding: 50px;
+.main-google {
+    padding: 50px 0px;
     font-size: 100px;
 }
 
-.search-warp {
+#font-blue {
+    color:blue;
+}
+
+#font-green {
+    color:green;
+}
+
+#font-red {
+    color:red;
+}
+#font-yellow {
+    color: yellow;
+}
+.search-wrap {
     display: flex;
     justify-content: center;
+    margin-top: auto;
+}
+
+.sub-search-warp {
+    display: flex;
+    justify-content: center;
+    border: 1px solid;
+    padding: 5px 15px;
+    border-radius: 25px;
 }
 
 .main-search {
     background-color: transparent;
     border: none;
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     color: rgba(0,0,0,.87);
     word-wrap: break-word;
     outline: none;
     display: flex;
     flex: 100%;
     -webkit-tap-highlight-color: transparent;
-    margin-top: -37px;
-    height: 34px;
+    margin: 0px 150px 0px 5px;
+    height: 36px;
     font-size: 16px;
+}
+
+.icon-wrap {
+    margin: 7.5px 3px;
+}
+
+.button-wrap{
+    display: flex;
+    justify-content: center;
+}
+
+input {
+    border: none;
 }
